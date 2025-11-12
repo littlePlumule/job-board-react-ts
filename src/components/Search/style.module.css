@@ -1,0 +1,30 @@
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  position: relative;
+  width: 300px;
+}
+
+.searchInput {
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #000;
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+.searchButton {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: 0;
+}
+
+.searchIcon {
+  font-size: 20px;
+  cursor: pointer;
+}
