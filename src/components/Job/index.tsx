@@ -1,6 +1,6 @@
-import { FaStar } from 'react-icons/fa6'
 import styles from './style.module.css'
-import type { JobProps } from '../../type/jobs'
+import { FaStar } from 'react-icons/fa6'
+import type { JobProps } from './types'
 
 export default function Job({ job, toggleFollowed }: JobProps) {
   return (

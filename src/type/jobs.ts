@@ -10,12 +10,7 @@ export interface Job {
   followed: boolean
 }
 
-export interface JobProps {
-  job: Job
-  toggleFollowed: (id: number) => void
-}
-
-export type UseJobsReturn = {
+export interface UseJobsReturn {
   jobs: Job[]
   setJobs: Dispatch<SetStateAction<Job[]>>
   toggleFollowed: (id: number) => void

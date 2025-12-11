@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
-import type { ChangeEvent, FormEvent } from 'react'
+import {
+  useState,
+  type ChangeEvent,
+  type Dispatch,
+  type FormEvent,
+  type SetStateAction,
+} from 'react'
 import type { UseSearchReturn } from '../type/search'
 
 export default function useSearch(
-  setSearchTerm: React.Dispatch<React.SetStateAction<string>>
+  setSearchTerm: Dispatch<SetStateAction<string>>
 ): UseSearchReturn {
   const [value, setValue] = useState<string>('')
   const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
@@ -14,10 +19,5 @@ export default function useSearch(
     setSearchTerm(value)
   }
 
-  return {
-    value,
-    setValue,
-    handleInput,
-    handleSubmit,
-  }
+  return { value, setValue, handleInput, handleSubmit }
 }

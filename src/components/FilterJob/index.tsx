@@ -1,15 +1,15 @@
+import { FILTER } from '../../type/filter'
 import styles from './style.module.css'
-import type { FilterJobProps, FilterType } from '../../type/filter'
+import type { FilterJobProps } from './types'
 
 export default function FilterJob({ filter, setFilter }: FilterJobProps) {
-  const filterMap: FilterType[] = [
-    'all',
-    'frontend',
-    'backend',
-    'other',
-    'followed',
+  const filterMap = [
+    FILTER.All,
+    FILTER.Frontend,
+    FILTER.Backend,
+    FILTER.Other,
+    FILTER.Followed,
   ]
-
   return (
     <div className={styles.filterWrapper}>
       {filterMap.map((item) => (

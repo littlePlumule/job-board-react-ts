@@ -1,8 +1,8 @@
 import styles from './style.module.css'
 import useJobs from '../hooks/useJobs'
 import Job from '../components/Job'
-import FilterJob from '../components/FilterJob'
 import Search from '../components/Search'
+import FilterJob from '../components/FilterJob'
 
 export default function App() {
   const { toggleFollowed, setSearchTerm, filter, setFilter, filterJobs } =

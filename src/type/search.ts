@@ -1,9 +1,4 @@
-import type { Dispatch, SetStateAction } from 'react'
-import type { ChangeEvent, FormEvent } from 'react'
-
-export interface searchProps {
-  setSearchTerm: Dispatch<SetStateAction<string>>
-}
+import type { ChangeEvent, Dispatch, FormEvent, SetStateAction } from 'react'
 
 export interface UseSearchReturn {
   value: string

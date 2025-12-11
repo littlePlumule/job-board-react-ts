@@ -1,5 +1,3 @@
-import type { Dispatch, SetStateAction } from 'react'
-
 export const FILTER = {
   All: 'all',
   Frontend: 'frontend',
@@ -7,9 +5,5 @@ export const FILTER = {
   Other: 'other',
   Followed: 'followed',
 } as const
-export type FilterType = (typeof FILTER)[keyof typeof FILTER]
 
-export interface FilterJobProps {
-  filter: FilterType
-  setFilter: Dispatch<SetStateAction<FilterType>>
-}
+export type FilterType = (typeof FILTER)[keyof typeof FILTER]

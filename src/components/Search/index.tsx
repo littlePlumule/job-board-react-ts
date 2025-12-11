@@ -1,9 +1,9 @@
 import styles from './style.module.css'
 import { CiSearch } from 'react-icons/ci'
 import useSearch from '../../hooks/useSearch'
-import type { searchProps } from '../../type/search'
+import type { SearchProps } from './types'
 
-export default function Search({ setSearchTerm }: searchProps) {
+export default function Search({ setSearchTerm }: SearchProps) {
   const { value, handleInput, handleSubmit } = useSearch(setSearchTerm)
 
   return (
@@ -11,7 +11,7 @@ export default function Search({ setSearchTerm }: searchProps) {
       <input
         className={styles.searchInput}
         type="text"
-        placeholder="please input job name"
+        placeholder="Please Input Job Name"
         value={value}
         onChange={handleInput}
       />
